@@ -1,0 +1,176 @@
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser
+$ git add file.txt
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser (master)
+$ mkdir c:\newuser48
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser (master)
+$ cd c:\newuser48
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git init
+Initialized empty Git repository in C:/Users/admin/cnewuser/cnewuser48/.git/
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git config --global user.name "neha"
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git config --global user.email "nehakaleq@gmail.com"
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ echo "hello">file.txt
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git log -p -2
+fatal: your current branch 'master' does not have any commits yet
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git log -p -2
+fatal: your current branch 'master' does not have any commits yet
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git log --stat
+bash: $'\302\223\302\223\302\223\302\223git': command not found
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git log --pretty=oneline
+fatal: your current branch 'master' does not have any commits yet
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git add file.txt
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git commit -m "first commit"
+[master (root-commit) dadbb16] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git log
+commit dadbb1642d008400fbe092c7741265ef078b0591 (HEAD -> master)
+Author: neha <nehakaleq@gmail.com>
+Date:   Wed Apr 1 14:05:00 2026 +0530
+
+    first commit
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git remote add origin http://github.com/nehakaleqqqq/practical.git
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (master)
+$ git branch -M main
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/nehakaleqqqq/practical.git/' not found
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/nehakaleqqqq/practical.git/' not found
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git remote add origin http://github.com/nehakaleqqqq/git.practical.git
+error: remote origin already exists.
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git branch -M main
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/nehakaleqqqq/practical.git/' not found
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git remote set-url origin http://github.com/nehakaleqqqq/git.practical.git
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+warning: redirecting to https://github.com/nehakaleqqqq/git.practical.git/
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 210 bytes | 105.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To http://github.com/nehakaleqqqq/git.practical.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git pull origin main
+warning: redirecting to https://github.com/nehakaleqqqq/git.practical.git/
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 896 bytes | 49.00 KiB/s, done.
+From http://github.com/nehakaleqqqq/git.practical
+ * branch            main       -> FETCH_HEAD
+   dadbb16..f257e80  main       -> origin/main
+Updating dadbb16..f257e80
+error: Your local changes to the following files would be overwritten by merge:
+        file.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git stash
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it
+Saved working directory and index state WIP on main: dadbb16 first commit
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ git pull origin main
+warning: redirecting to https://github.com/nehakaleqqqq/git.practical.git/
+From http://github.com/nehakaleqqqq/git.practical
+ * branch            main       -> FETCH_HEAD
+Updating dadbb16..f257e80
+Fast-forward
+ file.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$ ^C
+
+admin@nmitdlab1-42 MINGW64 ~/c:newuser/c:newuser48 (main)
+$
